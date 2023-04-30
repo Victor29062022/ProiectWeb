@@ -1,0 +1,379 @@
+
+html{
+  margin: 0;
+  padding: 0; 
+}
+
+
+body {
+  margin: 0;
+  padding: 0; 
+  background-image: url('img/backround2.png')
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gainsboro;
+    color: rgb(237, 185, 121);
+    text-align: center;
+    
+  }
+
+
+.header{
+  position: relative;
+  width: 100vw;
+  height: 48px;;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to right,white, orange);
+  display: inline-flex;
+  min-height: 55px;
+
+}
+
+.loginInput{
+  margin-left: 25%;
+  margin-top: 17%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.loginButtons{
+  
+  margin-left: 20%;
+  margin-top: 20%;
+  border-radius: 15px;
+  
+}
+
+.navbar{
+  display: flex;
+  margin-top: 20px;
+}
+
+#loginBody{
+  background-image: url('img/loginBackround.jpg');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#logo{
+  width: 50px;
+  height: 48px;
+}
+
+#loginBox{
+  border-radius: 20px;
+  border-style:ridge;
+  border-width: 1px;
+  width: 350px;
+  height: 300px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 145, 0);
+
+}
+
+#loginButton{
+  margin-right: 70px;
+  color: orange;
+  border-radius: 15px;
+  padding: 10px;
+  border-style:solid;
+  border-width: 1px;
+  transition-duration: 0.4s;
+}
+
+#loginButton:hover {
+  background-color: #ff2f00; 
+  color: white;
+}
+
+#registerButton{
+  color: orange;
+  border-radius: 15px;
+  padding: 10px;
+  border-style:solid;
+  border-width: 1px;
+  transition-duration: 0.4s;
+}
+
+#registerButton:hover {
+  background-color: #ff2f00; 
+  color: white;
+}
+
+#companyName{
+  color: aliceblue;
+  margin-left: 80%;
+  margin-top: 20px;
+}
+
+#companyNameLogo{
+  height: 50px;
+  width: 160px;
+}
+
+.button{
+  color: aliceblue;
+  background-color: orange;
+  border-radius: 15px;
+  padding: 10px;
+  border-style:solid;
+  border-width: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 30px;
+  min-height: 30px;
+  min-width: 100px;
+  text-align: center;
+  transition-duration: 0.4s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ff2f00;
+  color: white;
+  font-weight: bold;
+}
+
+.buttonOnCurentPage{
+  color: orange;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 10px;
+  border-style:solid;
+  border-width: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 120px;
+  height: 32px;
+  min-height: 32px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.searchInput{
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 160px;
+  text-align: right;
+}
+
+.aboutPage{
+  padding-left: 10;
+}
+
+.contact{
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.registerInput{
+  margin-top: 9%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.registerButtons{
+  margin-top: 40px;
+  margin-left: 175px;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #e1e1e1;
+  color: #263c03;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 3px;
+  position: relative;
+  z-index: 1;
+  bottom: 0%;
+  left: 100%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  right: 100%;
+  margin-right: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e1e1e1 transparent transparent transparent;
+  
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#registerBox{
+  border-radius: 20px;
+  border-style:ridge;
+  border-width: 1px;
+  width: 450px;
+  height: 450px;
+  position: relative;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 145, 0);
+  margin-top: 300px;
+  margin-left: 50%;
+
+}
+
+#select{
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+#showMoreStudentsButton{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#moreStudents{
+  display: none;
+}
+
+.gallery {
+	display: flex;
+	grid-template-columns: auto auto auto auto;
+	gap: 20px;
+	max-width: 900px;
+}
+
+.gallery img {
+  margin-left: 20px;
+  height: 150;
+	width: 250px;
+	border-radius: 10px;
+}
+
+#lightbox {
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.close, .prev, .next {
+	position: absolute;
+	cursor: pointer;
+}
+
+.close {
+	right: 10px;
+	top: 10px;
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
+
+#apparelSearchSelect{
+  width :400px;
+}
+
+.searchSelect {
+  width :270px;
+  min-width: 50px;
+  margin-top: 10px;
+
+}
+
+.select2-container {
+  height: 45px !important;
+}
+
+.label {
+  margin-left: 10px;
+  
+}
+
+#email{
+  margin-left: 25px;
+}
+
+#registerLabelUser{
+  margin-top: 40px;
+}
+
+#loginButtonReg{
+  margin-top: 10px;
+  margin-left: 150px;
+  color: orange;
+  border-radius: 15px;
+  padding: 10px;
+  border-style:solid;
+  border-width: 1px;
+  transition-duration: 0.4s;
+}
+
+#loginButtonReg:hover {
+  background-color: #ff2f00; 
+  color: white;
+}
